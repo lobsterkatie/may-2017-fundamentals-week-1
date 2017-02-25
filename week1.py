@@ -1,7 +1,6 @@
 animals = ["aardvark", "bear", "cow", "deer", "elephant", "frog", "gorilla",
            "hamster", "ibex", "jaguar", "kangaroo", "llama", "mongoose"]
 
-#random comment for me to take out next time!!
 
 #for loop version
 capital_four_letter_animals = []
@@ -14,3 +13,9 @@ for animal in animals:
 print "for-loop version:", capital_four_letter_animals
 
 #list comprehesion version
+
+list_comp_c_f_l_a = [animal.title() 
+                     for animal in animals 
+                     if len(animal) == 4]
+
+print "list comprehension version:", list_comp_c_f_l_a
